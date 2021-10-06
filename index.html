@@ -5,18 +5,29 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;900&display=swap" rel="stylesheet">
   <title>ねこプロ</title>
 </head>
 
 <body>
   <header>
-    <h1>ねこプロ</h1>
-    <p>日本初のねこのように学ぶプログラミング学習コミュニティ</p>
+    <div class="wrapper">
+      <div class="title">
+        <h1 id="communityName">ねこプロ</h1>
+        <p id="subTitle">日本初のねこのように学ぶプログラミング学習コミュニティ</p>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h1>ねこプロ入会お申し込み</h1>
+    <div class="wrapper">
+      <h2>ねこプロ入会お申し込み</h2>
       <img src="image01.jpeg" alt="">
       <table border="1">
         <tr>
@@ -36,20 +47,24 @@
       </table>
 
       <form action="post">
-        <div>
-          <label for="plan">プラン選択：</label>
-          <select name="" id="plan">
+        <div class="input">
+          <label for="plan">プラン選択：</label><br>
+          <select name="" id="planName">
             <option value="のんびりプラン">のんびりプラン</option>
             <option value="わくわくプラン">わくわくプラン</option>
           </select>
         </div>
-        <div><label for="name">名前　　　：</label>
+        <div><label for="name">名前：</label><br>
           <input id="name" type="text" placeholder="名字　名前" />
+        </div>
+        <div class="input">
+          <label for="gender">性別：
+          </label><br>
           <input type="radio" name="gender" value="男">男
           <input type="radio" name="gender" value="女" checked>女
         </div>
         <div>
-          <label for="bloodType">血液型　　：</label>
+          <label for="bloodType">血液型：</label><br>
           <select name="" id="bloodType">
             <option value="A">A</option>
             <option value="B">B</option>
@@ -59,8 +74,8 @@
           </select>
         </div>
 
-        <div>
-          <label for="language">得意な言語：</label>
+        <div class="input">
+          <label for="language">得意な言語：</label><br>
           <input type="checkbox" name="language" value="Java" id="">Java
           <input type="checkbox" name="language" value="JavaScript" id="">JavaScript
           <input type="checkbox" name="language" value="Python" id="">Python
@@ -69,22 +84,22 @@
           <input type="checkbox" name="language" value="PHP" id="">PHP
           <input type="checkbox" name="language" value="Go" id="">Go
         </div>
-        <div>
-          <p>コメント</p>
-          <textarea name="" cols="30" rows="10"></textarea>
+        <div class="input">
+          <label for="">コメント:</label><br>
+          <textarea id="comment" name="" cols="30" rows="10"></textarea>
         </div>
-        <div>
-          <input type="submit" value="申し込む">
+        <div class="submitButton">
+          <input id="submit" type="submit" value="申し込む"><br>
+          <a id="guidline" href="guidline.html">ガイドライン</a>
         </div>
       </form>
-      <a href="guidline.html">ガイドライン</a>
 
-      <footer>
-        <p>Copyright 2021 nekopuro</p>
-      </footer>
-    </section>
+    </div>
 
   </main>
+  <footer>
+    <p id="copyright">Copyright 2021 nekopuro</p>
+  </footer>
 </body>
 
 </html>

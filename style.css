@@ -1,0 +1,117 @@
+body{
+    background-color: rgb(247, 241, 222);
+    margin: 0;
+    color: rgb(73, 73, 73);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
+}
+header{
+    background-image: url("/Header.png");
+    height: 100px;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header .wrapper{
+    padding: 10px;
+    display: flex;
+}
+
+main {
+    min-height: calc(100vh - 160px);
+}
+
+main .wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#communityName{
+    color:rgb(193, 153, 77);
+    margin: 0;
+}
+p{
+    margin: 0;
+    font-family: 'M PLUS Rounded 1c';
+    font-weight: 400;
+}
+
+table{
+    text-align: center;
+    margin: 20px 0;
+    width: 565px;
+    border-collapse: collapse;
+    border-color: rgb(226, 226, 226);
+    background-color: #fff;
+}
+
+
+.input{
+    margin:10px 0;
+}
+
+#name{
+    border: solid 1px;
+    border-radius: 10px;
+    border-color: lightgray;
+    height: 35px;
+    width:560px
+}
+
+#planName,#bloodType{
+    border: solid 1px;
+    border-radius: 10px;
+    border-color: lightgray;
+    height: 35px;
+    width:565px
+
+}
+
+#comment{
+    border: solid 1px;
+    border-radius: 10px;
+    border-color: lightgray;
+    width:565px
+}
+
+#submit{
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(113, 167, 97);
+    color: #fff;
+}
+
+.submitButton{
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer{
+    text-align: center;
+    height: 40px;
+    background-color: rgb(250, 247, 239);
+}
+
+#guidline{
+    font-size: 0.85rem;
+    color: rgb(53, 53, 53);
+    text-decoration: none;
+}
+
+#copyright{
+    padding: 10px;
+    font-size: x-small;    
+}
+
+ul{
+    list-style-image: url(footprint.png);
+}
+
+ol{
+    list-style-type:square;
+}
